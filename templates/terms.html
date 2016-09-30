@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+  <head>
+    <title>Change Apocrita passwords</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/prm.css" />
+    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/js/prm.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+
+    <div id="headertop"> <h2 class="form-signin-heading text-center">ITS Research Services Password Change</h2></div>
+  <div class="container">
+    <p>
+      This regulation is made pursuant to College Ordinance A3.2 and concerns the conduct of members of the College (which includes all staff, students and visitors) in relation to the use of Information Technology (including the telephone system) and the relevant legislation and conditions imposed by the funding authorities.
+    </p>
+    <ol>
+    <li>The information technology resources provided by the College are for use in connection with the work of the College. Any use which is unlawful, indecent, offensive or threatening, or which harasses another person, either on or off the campus, is prohibited.</li>
+    <li>The College requires all staff, students and other members of the College strictly to comply with the provisions and obligations of all legislation, and conditions imposed by the funding authorities connected with the use of Information Technology. This includes the <a href="http://www.hmso.gov.uk/acts/acts1988/Ukpga_19880048_en_1.htm">Copyright, Designs and Patents Act 1988</a>, the <a href="http://www.hmso.gov.uk/acts/acts1990/Ukpga_19900018_en_1.htm">Computer Misuse Act 1990</a>, <a href="http://www.hmso.gov.uk/acts/acts1998/19980029.htm">Data Protection Act 1998</a>, the <a href="http://www.hmso.gov.uk/acts/acts2000/20000023.htm">Regulation of Investigatory Powers Act 2000</a>, and the <a href="http://www.ja.net/documents/publications/policy/aup.pdf">JANET Acceptable Use Policy</a>, which is issued by UKERNA under the authority of the Higher Education Funding Councils. Members of College are also required to comply with College policies and guidelines relating to the security and integrity of the information technology systems.</li>
+    <li>It is the responsibility of members of the College to familiarise themselves with the relevant legislation and conditions which apply to their use of the College's information technology resources and to comply with them. Members of the College should note that the list of legislation and conditions in the preceding paragraph is only a small part of the applicable UK laws, regulations and conditions, and that laws and regulations of other countries may also apply, particularly in respect of Internet use. The College may from time to time issue Rules, Policies or <a href="http://www.its.qmul.ac.uk/governance/policies/regulation/council-regulation/index.html">Notes for Guidance</a> in respect of compliance with this Regulation.</li>
+    <li>The College will not accept responsibility for actions, proceedings, costs, claims or demands brought against any member of the College in connection with or as a result of non compliance with this Regulation. To the extent that the College is held liable in these circumstances, it shall have the right to be indemnified for any loss or damage caused to the College in respect thereof by such member.</li>
+    <li>Breach of this Regulation will be considered a disciplinary offence which, in respect of students, will be defined as misconduct under the provisions of the <a href="http://www.arcs.qmul.ac.uk/docs/policyzone/101884.pdf">College Code of Student Discipline</a> and treated accordingly and, in respect of staff, will be dealt with under the relevant disciplinary procedures.</li>
+    </ol>
+ 
+      <form class="form-signin" method="post" action="/accept" class="form-signin">
+        <p>Do you accept these terms and conditions?</p>
+        <input name="redirect" value="" type="hidden">
+        <input name="puffer" value="{{.Puffer}}" type="hidden"> 
+        <input name="wuffer" value="{{.Wuffer}}" type="hidden">
+        <input name="tuffer" value="{{.Tuffer}}" type="hidden">
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="verb" value="Accept">Accept</button>
+        <button class="btn btn-lg btn-warning btn-block" type="submit" name="verb" value="Decline">Decline</button>
+      </form>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+  <head>
+    <title>Change ITS Research passwords</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/prm.css" />
+    <script src="/static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/static/js/prm.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+    <div id="headertop"> <h2 class="form-signin-heading text-center">ITS Research Password Change</h2></div>
+    <div class="container">
+      <form class="form-signin" method="POST" action="/change" id="main_form" class="form-signin">
+        <label for="user" class="sr-only">Username(login)</label>
+        <input name="user" class="form-control" placeholder="Username" id="user" type="text" tabindex="1">
+    
+        <div class="form-group">
+          <label for="otp" class="sr-only">One-time account unlocking code</label>
+          <input name="otp" class="form-control" id="otp" placeholder="One-time account unlocking code" type="text" tabindex="2">
+          <p class="help-block text-center">or</p>
+          <label for="p0" class="sr-only">existing password</label>
+          <input name="p0" placeholder="Existing password" id="p0" class="form-control" type="password" tabindex="3">
+        </div>
+    
+        <div class = "form-group" id="new_password_fields">
+          <label for="p1" class="sr-only">New ITS Research password</label>
+          <input name="p1" placeholder="New ITS Research password" id="p1" class="form-control" type="password" tabindex="4">
+          <label for="p2" class="sr-only">New ITS Research password again</label>
+          <input name="p2" id="p2" placeholder="New ITS Research password again" class="form-control" type="password" tabindex="5">
+        </div>
+
+        <input name="redirect" value="false" type="hidden">
+        <input name="s" value="t" type="hidden">
+        <button autocomplete="off" class="btn btn-lg btn-primary btn-block" id="main_form_submit" type="submit" disabled="disabled" tabindex="6" >Set my ITS Research password</button>
+      </form>
+
+      <hr/>
+      <p>Please choose a good new password, i.e. one that is
+      difficult to guess both by a human and by a computer.</p>
+
+      <h3><strong>Dont</strong></h3>
+      <ul><li>use your login name in any form, or anyone else's</li>
+      <li>use your first or last name in any form</li>
+      <li>use your spouse's or child's name</li>
+      <li>use other information easily obtained about you. This includes 
+      license plate numbers, telephone numbers, NI numbers, your street name, 
+      ...</li>
+      <li>use a password of all digits, or all the same letter.</li>
+      <li>use a word contained in dictionaries (in any language), spelling 
+      lists, or other lists of words</li>
+      <li>use two words concatenated together</li>
+      <li>use a short password--these could be guessed by brute-force!</li>
+      <li>use pinyin with or without tonal numbers</li></ul>
+
+      <h3><strong>Do</strong></h3>
+      <ul><li>use a password of 9 or more characters</li>
+      <li>use a password with mixed-case alphabetics</li>
+      <li>use a password with non-alphabetic characters (eg [0-9,.:;])</li>
+      <li>use a password that is easy to remember :-)</li>
+      <li>use a password that you can type quickly, because this makes it 
+      harder for someone to steal your password by watching over your 
+      shoulder.</li></ul>
+
+      <h3><strong>Methods</strong></h3>
+      <ul><li>Choose a line or two from a song or poem, and use the first 
+      letter of each word. For example, "My dog's got no nose. How [does he] smell? 
+      Terrible!" might become "MdgnnHsT" or maybe "DgnnS?T!".</li>
+      <li>Alternate between one consonant and one or two vowels, up to eight 
+      characters. This provides nonsense words that are usually pronouncable, 
+      and thus easily remembered, e.g. "routbolo", "quedapop", etc. but 
+      include mixed-case otherwise your password might still be 
+      guessable!</li>
+      <li><strong>Don't</strong> use "MdgnnHsT", "DgnnS?T!", "routbolo" or "quedapop" 
+      ;-)</li></ul>
+    </div>
+  </body>
+</html>
+

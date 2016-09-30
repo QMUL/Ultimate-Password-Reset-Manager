@@ -1,0 +1,12 @@
+# Hashes of file build rules.
+5aea3841b9d37d7dc5e2f9bd05acac0c CMakeFiles/go-junit-report
+44e7a60e96fef0c682c71eaa669b8ef5 CMakeFiles/gocov
+96a4b4eecc984476fe82415ee0034e9d CMakeFiles/gocov-xml
+bc959f438e28623aecba7c2d60b573e6 CMakeFiles/tests
+8e9ce1409cb2ddc96257a6b13b35516c buildinfo/CMakeFiles/genversion
+81c99011db3a5327b2503f1bcb608e55 buildinfo/buildinfo
+566d45766d3ecd8702e426ce5ae9613e prmserver/CMakeFiles/go-ldap
+42f4f430d781d90f07638bfbb9f19865 prmserver/CMakeFiles/ldap.v2
+9779985c89e9e38bef4797c1d8ea6020 prmserver/CMakeFiles/prm
+95b331372b799496e78ebd50a765a7fd prmserver/CMakeFiles/prm_server
+549b805bf217f8d37589cb7c8b198c82 prmserver/CMakeFiles/yaml.v2

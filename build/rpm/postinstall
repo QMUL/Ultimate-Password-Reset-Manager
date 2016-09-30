@@ -1,0 +1,2 @@
+#!/bin/sh
+restorecon -R /var/www/html/{passwordmanager,static,templates}

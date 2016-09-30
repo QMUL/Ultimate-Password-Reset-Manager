@@ -1,0 +1,30 @@
+---
+templatepath: ../templates/
+ldaphost: mgt-test
+ldapport: 389
+bindpassword: prm
+binddn: cn=prm,dc=hpc,dc=qmul,dc=ac,dc=uk
+ldapinsecureskipverify: true
+tlsverify: true
+basedn: dc=hpc,dc=qmul,dc=ac,dc=uk
+certfilepath: /etc/pki/tls/certs/vagrantCA-cert.pem
+loglevel: DEBUG
+uffer: 0123456789ABCDEF
+passwordmodifyldap: uid=%v,ou=People
+userfieldldap: uid
+orgfieldldap: ou=People
+emailsub: Your Apocrita password has changed 
+emailmsg: | 
+ Dear %NAME% 
+ You have successfully changed your Apocrita password.
+ 
+ If you did not initiate the password reset, please contact ITS Research Support at
+ its-research-support@qmul.ac.uk as soon as possible
+ 
+ For information on how to use the QMUL HPC facilities please visit
+ http://docs.hpc.qmul.ac.uk.
+ 
+ Regards
+ 
+ ITS Research
+---

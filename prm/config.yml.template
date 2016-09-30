@@ -1,0 +1,20 @@
+---
+templatepath: ../templates/
+ldaphost: ldaphost-test
+ldapport: 389
+bindpassword: prm
+binddn: <your bind dn> 
+ldapinsecureskipverify: true
+tlsverify: true
+basedn: <your base dn>
+certfilepath: <full path to cert>
+loglevel: DEBUG
+uffer: FF23BA6789AB3D11
+passwordmodifyldap: uid=%v,ou=People
+userfieldldap: uid
+orgfieldldap: ou=People
+emailsub: Email Subject 
+emailmsg: | 
+ Dear %NAME% 
+  Here is an email
+---
